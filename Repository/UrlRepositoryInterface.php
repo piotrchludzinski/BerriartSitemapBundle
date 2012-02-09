@@ -20,7 +20,7 @@ interface UrlRepositoryInterface
     /**
      * URL limit by sitemap page 
      */
-    const LIMIT = 5000;
+    const LIMIT = 1000;
 
     function findOneByLoc($loc);
     function findAllOnPage($page);
