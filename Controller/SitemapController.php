@@ -25,6 +25,7 @@ class SitemapController
 
     public function __construct(Sitemap $sitemap, EngineInterface $templating, Request $request) //, EngineInterface $templating)
     {
+        ini_set('memory_limit', 256);
         $this->sitemap = $sitemap;
         $this->request = $request;
         $this->templating = $templating;
